@@ -7,9 +7,9 @@
    width="1024"
    height="1024"
    viewBox="0 0 1280 1280"
-   sodipodi:docname="OrcaSlicer_gradient_circle.svg"
+   sodipodi:docname="RackSlicer_gradient_circle.svg"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
-   inkscape:export-filename="OrcaSlicer_gradient1024.png"
+   inkscape:export-filename="RackSlicer_gradient1024.png"
    inkscape:export-xdpi="96.000008"
    inkscape:export-ydpi="96.000008"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -249,7 +249,7 @@
            transform="translate(479.0017,536.9419)">
           <path
              d="m 0,0 -419.273,-421.59 c 0.298,-0.298 0.606,-0.587 0.906,-0.884 146.894,74.925 348.023,206.579 486.003,316.297 C 52.756,-65.97 29.506,-29.859 0,0"
-             style="fill:#009789;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             style="fill:#ff5900;fill-opacity:1;fill-rule:nonzero;stroke:none"
              id="path24" />
         </g>
         <g

@@ -211,13 +211,13 @@ wxBoxSizer* WipingDialog::create_btn_sizer(long flags)
     btn_sizer->AddStretchSpacer();
 
     StateColor ok_btn_bg(
-        std::pair<wxColour, int>(wxColour(0, 137, 123), StateColor::Pressed),
-        std::pair<wxColour, int>(wxColour(38, 166, 154), StateColor::Hovered),
-        std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Normal)
+        std::pair<wxColour, int>(wxColour(230, 90, 40), StateColor::Pressed),
+        std::pair<wxColour, int>(wxColour(245, 89, 0), StateColor::Hovered),
+        std::pair<wxColour, int>(wxColour(255, 89, 0), StateColor::Normal)
     );
 
     StateColor ok_btn_bd(
-        std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Normal)
+        std::pair<wxColour, int>(wxColour(255, 89, 0), StateColor::Normal)
     );
 
     StateColor ok_btn_text(
@@ -240,13 +240,13 @@ wxBoxSizer* WipingDialog::create_btn_sizer(long flags)
 
 
     StateColor calc_btn_bg(
-        std::pair<wxColour, int>(wxColour(0, 137, 123), StateColor::Pressed),
-        std::pair<wxColour, int>(wxColour(38, 166, 154), StateColor::Hovered),
-        std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Normal)
+        std::pair<wxColour, int>(wxColour(230, 90, 40), StateColor::Pressed),
+        std::pair<wxColour, int>(wxColour(245, 89, 0), StateColor::Hovered),
+        std::pair<wxColour, int>(wxColour(255, 89, 0), StateColor::Normal)
     );
     
     StateColor calc_btn_bd(
-        std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Normal)
+        std::pair<wxColour, int>(wxColour(255, 89, 0), StateColor::Normal)
     );
     
     StateColor calc_btn_text(
@@ -296,13 +296,13 @@ wxBoxSizer* WipingDialog::create_btn_sizer(long flags)
 wxBoxSizer* WipingPanel::create_calc_btn_sizer(wxWindow* parent) {
     auto btn_sizer = new wxBoxSizer(wxHORIZONTAL);
     StateColor calc_btn_bg(
-        std::pair<wxColour, int>(wxColour(0, 137, 123), StateColor::Pressed),
-        std::pair<wxColour, int>(wxColour(38, 166, 154), StateColor::Hovered),
-        std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Normal)
+        std::pair<wxColour, int>(wxColour(230, 90, 40), StateColor::Pressed),
+        std::pair<wxColour, int>(wxColour(245, 89, 0), StateColor::Hovered),
+        std::pair<wxColour, int>(wxColour(255, 89, 0), StateColor::Normal)
     );
 
     StateColor calc_btn_bd(
-        std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Normal)
+        std::pair<wxColour, int>(wxColour(255, 89, 0), StateColor::Normal)
     );
 
     StateColor calc_btn_text(
@@ -354,7 +354,7 @@ WipingDialog::WipingDialog(wxWindow* parent, const std::vector<float>& matrix, c
                 wxDefaultSize,
                 wxDEFAULT_DIALOG_STYLE /* | wxRESIZE_BORDER*/)
 {
-    std::string icon_path = (boost::format("%1%/images/OrcaSlicerTitle.ico") % Slic3r::resources_dir()).str();
+    std::string icon_path = (boost::format("%1%/images/RackSlicerTitle.ico") % Slic3r::resources_dir()).str();
     SetIcon(wxIcon(Slic3r::encode_path(icon_path.c_str()), wxBITMAP_TYPE_ICO));
 
     auto m_line_top = new wxPanel(this, wxID_ANY, wxDefaultPosition, wxSize(-1, 1));

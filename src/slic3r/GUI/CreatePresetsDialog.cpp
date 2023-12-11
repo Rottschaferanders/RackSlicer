@@ -28,7 +28,7 @@
 #define STATIC_TEXT_COLOUR wxColour("#363636")
 #define PRINTER_LIST_COLOUR wxColour("#EEEEEE")
 #define FILAMENT_OPTION_COLOUR wxColour("#D9D9D9")
-#define SELECT_ALL_OPTION_COLOUR wxColour("#009688")
+#define SELECT_ALL_OPTION_COLOUR wxColour("#ff5900")
 #define DEFAULT_PROMPT_TEXT_COLOUR wxColour("#ACACAC")
 
 namespace Slic3r { 
@@ -539,7 +539,7 @@ CreateFilamentPresetDialog::CreateFilamentPresetDialog(wxWindow *parent)
 	this->SetBackgroundColour(*wxWHITE);
     this->SetSize(wxSize(FromDIP(600), FromDIP(480)));
 
-    std::string icon_path = (boost::format("%1%/images/OrcaSlicerTitle.ico") % resources_dir()).str();
+    std::string icon_path = (boost::format("%1%/images/RackSlicerTitle.ico") % resources_dir()).str();
     SetIcon(wxIcon(encode_path(icon_path.c_str()), wxBITMAP_TYPE_ICO));
 
 	wxBoxSizer *m_main_sizer = new wxBoxSizer(wxVERTICAL);
@@ -897,8 +897,8 @@ wxBoxSizer *CreateFilamentPresetDialog::create_button_item()
     wxBoxSizer *bSizer_button = new wxBoxSizer(wxHORIZONTAL);
     bSizer_button->Add(0, 0, 1, wxEXPAND, 0);
 
-    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(0, 137, 123), StateColor::Pressed), std::pair<wxColour, int>(wxColour(38, 166, 154), StateColor::Hovered),
-                            std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Normal));
+    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(230, 90, 40), StateColor::Pressed), std::pair<wxColour, int>(wxColour(245, 89, 0), StateColor::Hovered),
+                            std::pair<wxColour, int>(wxColour(255, 89, 0), StateColor::Normal));
 
     m_button_create = new Button(this, _L("Create"));
     m_button_create->SetBackgroundColor(btn_bg_green);
@@ -1390,7 +1390,7 @@ CreatePrinterPresetDialog::CreatePrinterPresetDialog(wxWindow *parent)
     this->SetBackgroundColour(*wxWHITE);
     SetSizeHints(wxDefaultSize, wxDefaultSize);
 
-    std::string icon_path = (boost::format("%1%/images/OrcaSlicerTitle.ico") % resources_dir()).str();
+    std::string icon_path = (boost::format("%1%/images/RackSlicerTitle.ico") % resources_dir()).str();
     SetIcon(wxIcon(encode_path(icon_path.c_str()), wxBITMAP_TYPE_ICO));
 
     wxBoxSizer *m_main_sizer = new wxBoxSizer(wxVERTICAL);
@@ -1816,7 +1816,7 @@ wxBoxSizer *CreatePrinterPresetDialog::create_hot_bed_stl_item(wxWindow *parent)
     StateColor flush_bg_col(std::pair<wxColour, int>(wxColour(219, 253, 231), StateColor::Pressed), std::pair<wxColour, int>(wxColour(238, 238, 238), StateColor::Hovered),
                             std::pair<wxColour, int>(wxColour(238, 238, 238), StateColor::Normal));
 
-    StateColor flush_bd_col(std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Pressed), std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Hovered),
+    StateColor flush_bd_col(std::pair<wxColour, int>(wxColour(255, 89, 0), StateColor::Pressed), std::pair<wxColour, int>(wxColour(255, 89, 0), StateColor::Hovered),
                             std::pair<wxColour, int>(wxColour(172, 172, 172), StateColor::Normal));
 
     m_button_bed_stl = new Button(parent, _L("Load stl"));
@@ -1853,7 +1853,7 @@ wxBoxSizer *CreatePrinterPresetDialog::create_hot_bed_svg_item(wxWindow *parent)
     StateColor flush_bg_col(std::pair<wxColour, int>(wxColour(219, 253, 231), StateColor::Pressed), std::pair<wxColour, int>(wxColour(238, 238, 238), StateColor::Hovered),
                             std::pair<wxColour, int>(wxColour(238, 238, 238), StateColor::Normal));
 
-    StateColor flush_bd_col(std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Pressed), std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Hovered),
+    StateColor flush_bd_col(std::pair<wxColour, int>(wxColour(255, 89, 0), StateColor::Pressed), std::pair<wxColour, int>(wxColour(255, 89, 0), StateColor::Hovered),
                             std::pair<wxColour, int>(wxColour(172, 172, 172), StateColor::Normal));
 
     m_button_bed_svg = new Button(parent, _L("Load svg"));
@@ -1900,8 +1900,8 @@ wxBoxSizer *CreatePrinterPresetDialog::create_page1_btns_item(wxWindow *parent)
     wxBoxSizer *bSizer_button = new wxBoxSizer(wxHORIZONTAL);
     bSizer_button->Add(0, 0, 1, wxEXPAND, 0);
 
-    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(0, 137, 123), StateColor::Pressed), std::pair<wxColour, int>(wxColour(38, 166, 154), StateColor::Hovered),
-                            std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Normal));
+    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(230, 90, 40), StateColor::Pressed), std::pair<wxColour, int>(wxColour(245, 89, 0), StateColor::Hovered),
+                            std::pair<wxColour, int>(wxColour(255, 89, 0), StateColor::Normal));
 
     m_button_OK = new Button(parent, _L("OK"));
     m_button_OK->SetBackgroundColor(btn_bg_green);
@@ -2481,8 +2481,8 @@ wxBoxSizer *CreatePrinterPresetDialog::create_page2_btns_item(wxWindow *parent)
     wxBoxSizer *bSizer_button = new wxBoxSizer(wxHORIZONTAL);
     bSizer_button->Add(0, 0, 1, wxEXPAND, 0);
 
-    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(0, 137, 123), StateColor::Pressed), std::pair<wxColour, int>(wxColour(38, 166, 154), StateColor::Hovered),
-                            std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Normal));
+    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(230, 90, 40), StateColor::Pressed), std::pair<wxColour, int>(wxColour(245, 89, 0), StateColor::Hovered),
+                            std::pair<wxColour, int>(wxColour(255, 89, 0), StateColor::Normal));
 
     StateColor btn_bg_white(std::pair<wxColour, int>(wxColour(206, 206, 206), StateColor::Pressed), std::pair<wxColour, int>(wxColour(238, 238, 238), StateColor::Hovered),
                             std::pair<wxColour, int>(*wxWHITE, StateColor::Normal));
@@ -3155,7 +3155,7 @@ CreatePresetSuccessfulDialog::CreatePresetSuccessfulDialog(wxWindow *parent, con
 {
     this->SetBackgroundColour(*wxWHITE);
     this->SetSize(wxSize(FromDIP(450), FromDIP(200)));
-    std::string icon_path = (boost::format("%1%/images/OrcaSlicerTitle.ico") % resources_dir()).str();
+    std::string icon_path = (boost::format("%1%/images/RackSlicerTitle.ico") % resources_dir()).str();
     SetIcon(wxIcon(encode_path(icon_path.c_str()), wxBITMAP_TYPE_ICO));
 
     wxBoxSizer *m_main_sizer = new wxBoxSizer(wxVERTICAL);
@@ -3205,8 +3205,8 @@ CreatePresetSuccessfulDialog::CreatePresetSuccessfulDialog(wxWindow *parent, con
         m_button_ok = new Button(this, _L("OK"));
         break;
     }
-    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(0, 137, 123), StateColor::Pressed), std::pair<wxColour, int>(wxColour(38, 166, 154), StateColor::Hovered),
-                            std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Normal));
+    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(230, 90, 40), StateColor::Pressed), std::pair<wxColour, int>(wxColour(245, 89, 0), StateColor::Hovered),
+                            std::pair<wxColour, int>(wxColour(255, 89, 0), StateColor::Normal));
 
     StateColor btn_bg_white(std::pair<wxColour, int>(wxColour(206, 206, 206), StateColor::Pressed), std::pair<wxColour, int>(wxColour(238, 238, 238), StateColor::Hovered),
                             std::pair<wxColour, int>(*wxWHITE, StateColor::Normal));
@@ -3267,7 +3267,7 @@ ExportConfigsDialog::ExportConfigsDialog(wxWindow *parent)
     this->SetBackgroundColour(*wxWHITE);
     this->SetSize(wxSize(FromDIP(600), FromDIP(600)));
 
-    std::string icon_path = (boost::format("%1%/images/OrcaSlicerTitle.ico") % resources_dir()).str();
+    std::string icon_path = (boost::format("%1%/images/RackSlicerTitle.ico") % resources_dir()).str();
     SetIcon(wxIcon(encode_path(icon_path.c_str()), wxBITMAP_TYPE_ICO));
 
     m_main_sizer = new wxBoxSizer(wxVERTICAL);
@@ -4041,8 +4041,8 @@ wxBoxSizer *ExportConfigsDialog::create_button_item(wxWindow* parent)
     wxBoxSizer *bSizer_button = new wxBoxSizer(wxHORIZONTAL);
     bSizer_button->Add(0, 0, 1, wxEXPAND, 0);
 
-    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(0, 137, 123), StateColor::Pressed), std::pair<wxColour, int>(wxColour(38, 166, 154), StateColor::Hovered),
-                            std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Normal));
+    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(230, 90, 40), StateColor::Pressed), std::pair<wxColour, int>(wxColour(245, 89, 0), StateColor::Hovered),
+                            std::pair<wxColour, int>(wxColour(255, 89, 0), StateColor::Normal));
 
     m_button_ok = new Button(this, _L("OK"));
     m_button_ok->SetBackgroundColor(btn_bg_green);
@@ -4198,7 +4198,7 @@ EditFilamentPresetDialog::EditFilamentPresetDialog(wxWindow *parent, FilamentInf
     this->SetBackgroundColour(*wxWHITE);
     this->SetMinSize(wxSize(FromDIP(600), -1));
 
-    std::string icon_path = (boost::format("%1%/images/OrcaSlicerTitle.ico") % resources_dir()).str();
+    std::string icon_path = (boost::format("%1%/images/RackSlicerTitle.ico") % resources_dir()).str();
     SetIcon(wxIcon(encode_path(icon_path.c_str()), wxBITMAP_TYPE_ICO));
 
     m_main_sizer = new wxBoxSizer(wxVERTICAL);
@@ -4539,7 +4539,7 @@ wxBoxSizer *EditFilamentPresetDialog::create_add_filament_btn()
     StateColor flush_fg_col(std::pair<wxColour, int>(wxColour(107, 107, 106), StateColor::Pressed), std::pair<wxColour, int>(wxColour(107, 107, 106), StateColor::Hovered),
                             std::pair<wxColour, int>(wxColour(107, 107, 106), StateColor::Normal));
 
-    StateColor flush_bd_col(std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Pressed), std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Hovered),
+    StateColor flush_bd_col(std::pair<wxColour, int>(wxColour(255, 89, 0), StateColor::Pressed), std::pair<wxColour, int>(wxColour(255, 89, 0), StateColor::Hovered),
                             std::pair<wxColour, int>(wxColour(172, 172, 172), StateColor::Normal));
 
     m_add_filament_btn->SetBackgroundColor(flush_bg_col);
@@ -4598,8 +4598,8 @@ wxBoxSizer *EditFilamentPresetDialog::create_button_sizer()
 
     bSizer_button->Add(0, 0, 1, wxEXPAND, 0);
 
-    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(0, 137, 123), StateColor::Pressed), std::pair<wxColour, int>(wxColour(38, 166, 154), StateColor::Hovered),
-                            std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Normal));
+    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(230, 90, 40), StateColor::Pressed), std::pair<wxColour, int>(wxColour(245, 89, 0), StateColor::Hovered),
+                            std::pair<wxColour, int>(wxColour(255, 89, 0), StateColor::Normal));
 
     m_ok_btn = new Button(this, _L("OK"));
     m_ok_btn->SetBackgroundColor(btn_bg_green);
@@ -4670,7 +4670,7 @@ CreatePresetForPrinterDialog::CreatePresetForPrinterDialog(wxWindow *parent, std
 
     this->SetBackgroundColour(*wxWHITE);
 
-    std::string icon_path = (boost::format("%1%/images/OrcaSlicerTitle.ico") % resources_dir()).str();
+    std::string icon_path = (boost::format("%1%/images/RackSlicerTitle.ico") % resources_dir()).str();
     SetIcon(wxIcon(encode_path(icon_path.c_str()), wxBITMAP_TYPE_ICO));
 
     wxBoxSizer *main_sizer = new wxBoxSizer(wxVERTICAL);
@@ -4799,8 +4799,8 @@ wxBoxSizer *CreatePresetForPrinterDialog::create_button_sizer()
 
     bSizer_button->Add(0, 0, 1, wxEXPAND, 0);
 
-    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(0, 137, 123), StateColor::Pressed), std::pair<wxColour, int>(wxColour(38, 166, 154), StateColor::Hovered),
-                            std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Normal));
+    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(230, 90, 40), StateColor::Pressed), std::pair<wxColour, int>(wxColour(245, 89, 0), StateColor::Hovered),
+                            std::pair<wxColour, int>(wxColour(255, 89, 0), StateColor::Normal));
 
     m_ok_btn = new Button(this, _L("OK"));
     m_ok_btn->SetBackgroundColor(btn_bg_green);
@@ -4938,7 +4938,7 @@ wxPanel *PresetTree::get_child_item(wxPanel *parent, std::shared_ptr<Preset> pre
     StateColor flush_fg_col(std::pair<wxColour, int>(wxColour(107, 107, 106), StateColor::Pressed), std::pair<wxColour, int>(wxColour(107, 107, 106), StateColor::Hovered),
                             std::pair<wxColour, int>(wxColour(107, 107, 106), StateColor::Normal));
 
-    StateColor flush_bd_col(std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Pressed), std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Hovered),
+    StateColor flush_bd_col(std::pair<wxColour, int>(wxColour(255, 89, 0), StateColor::Pressed), std::pair<wxColour, int>(wxColour(255, 89, 0), StateColor::Hovered),
                             std::pair<wxColour, int>(wxColour(172, 172, 172), StateColor::Normal));
 
     Button *edit_preset_btn = new Button(panel, _L("Edit Preset"));

@@ -10,7 +10,7 @@ body:
   - type: input
     id: version
     attributes:
-      label: OrcaSlicer Version
+      label: RackSlicer Version
       description: Which version of Orca Slicer are you running? You can see the full version in `Help` -> `About Orca Slicer`.
       placeholder: e.g. 1.6.6
     validations:
@@ -78,9 +78,9 @@ body:
             You can export the project file from the application menu in `File`->`Save project as...`, then zip it
           * A **log file** for crashes and similar issues.
             You can find your log file here:
-            Windows: `%APPDATA%\OrcaSlicer\log` or usually `C:\Users\<your username>\AppData\Roaming\OrcaSlicer\log`
-            MacOS: `$HOME/Library/Application Support/OrcaSlicer/log`
-            Linux: `$HOME/.config/OrcaSlicer/log`
+            Windows: `%APPDATA%\RackSlicer\log` or usually `C:\Users\<your username>\AppData\Roaming\RackSlicer\log`
+            MacOS: `$HOME/Library/Application Support/RackSlicer/log`
+            Linux: `$HOME/.config/RackSlicer/log`
             If Orca Slicer still starts, you can also reach this directory from the application menu in `Help` -> `Show Configuration Folder`
             You can zip the log directory, or just select the newest logs when this issue happens, and zip them
   - type: textarea

@@ -7,7 +7,7 @@
    width="1024"
    height="1024"
    viewBox="0 0 1024 1024"
-   sodipodi:docname="OrcaSlicer_gradient.svg"
+   sodipodi:docname="RackSlicer_gray.svg"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -20,11 +20,11 @@
        inkscape:collect="always"
        id="linearGradient619">
       <stop
-         style="stop-color:#d9d9d9;stop-opacity:1;"
+         style="stop-color:#434343;stop-opacity:1;"
          offset="0"
          id="stop615" />
       <stop
-         style="stop-color:#f9f9f9;stop-opacity:1;"
+         style="stop-color:#616161;stop-opacity:1;"
          offset="1"
          id="stop617" />
     </linearGradient>
@@ -39,8 +39,8 @@
        inkscape:collect="always"
        xlink:href="#linearGradient619"
        id="linearGradient621"
-       x1="6.0058432"
-       y1="-2.0039091"
+       x1="1.0009738"
+       y1="0.50097728"
        x2="1024"
        y2="1024.9971"
        gradientUnits="userSpaceOnUse"
@@ -57,12 +57,12 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="0.35355339"
-     inkscape:cx="362.03867"
-     inkscape:cy="726.90577"
+     inkscape:cx="695.79307"
+     inkscape:cy="981.46421"
      inkscape:window-width="1350"
      inkscape:window-height="1237"
-     inkscape:window-x="412"
-     inkscape:window-y="78"
+     inkscape:window-x="120"
+     inkscape:window-y="83"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <g
@@ -78,7 +78,10 @@
        x="0.93469638"
        y="-0.062442806"
        rx="2.0001395"
-       ry="2.0001287" />
+       ry="2.0001287"
+       inkscape:export-filename="..\..\..\a\RackSlicer\RackSlicer\resources\images\BambuStudio_192px_grayscale.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
   </g>
   <g
      id="g8"
@@ -104,7 +107,7 @@
            transform="translate(479.0017,536.9419)">
           <path
              d="m 0,0 -419.273,-421.59 c 0.298,-0.298 0.606,-0.587 0.906,-0.884 146.894,74.925 348.023,206.579 486.003,316.297 C 52.756,-65.97 29.506,-29.859 0,0"
-             style="fill:#009789;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             style="fill:#ff5900;fill-opacity:1;fill-rule:nonzero;stroke:none"
              id="path24" />
         </g>
         <g

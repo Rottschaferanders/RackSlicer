@@ -2,7 +2,7 @@
 # Orca Slicer     
 Orca Slicer is an open source slicer for FDM printers.   
 You can download Orca Slicer here: [github releases page](https://github.com/SoftFever/OrcaSlicer/releases/).  
-![discord-mark-blue](https://github.com/SoftFever/OrcaSlicer/assets/103989404/b97d5ffc-072d-4d0a-bbda-e67ef373876f) Join community: [OrcaSlicer Official Discord Server](https://discord.gg/P4VE9UY9gJ)   
+![discord-mark-blue](https://github.com/SoftFever/OrcaSlicer/assets/103989404/b97d5ffc-072d-4d0a-bbda-e67ef373876f) Join community: [RackSlicer Official Discord Server](https://discord.gg/P4VE9UY9gJ)   
 
 # Main features
 - Auto calibrations for all printers
@@ -14,7 +14,7 @@ You can download Orca Slicer here: [github releases page](https://github.com/Sof
 - More features can be found in [change notes](https://github.com/SoftFever/OrcaSlicer/releases/)  
 
 ### Some background
-OrcaSlicer is fork of Bambu Studio  
+RackSlicer is fork of Bambu Studio  
 It was previously known as BambuStudio-SoftFever  
 Bambu Studio is forked from [PrusaSlicer](https://github.com/prusa3d/PrusaSlicer) by Prusa Research, which is from [Slic3r](https://github.com/Slic3r/Slic3r) by Alessandro Ranellucci and the RepRap community. 
 Orca Slicer incorporates a lot of features from SuperSlicer by @supermerill
@@ -29,7 +29,7 @@ Orca Slicer's logo is designed by community member Justin Levine(@freejstnalxndr
 
 **Mac**:
 1. Download the DMG for your computer: `arm64` version for Apple Silicon and `x86_64` for Intel CPU.  
-2. Drag OrcaSlicer.app to Application folder. 
+2. Drag RackSlicer.app to Application folder. 
 3. *If you want to run a build from a PR, you also need following instructions bellow*  
     <details quarantine>
     - Option 1 (You only need to do this once. After that the app can be opened normally.):
@@ -37,9 +37,9 @@ Orca Slicer's logo is designed by community member Justin Levine(@freejstnalxndr
       - Step 2: A warning window will pop up, click _Open_  
       
     - Option 2:  
-      Execute this command in terminal: `xattr -dr com.apple.quarantine /Applications/OrcaSlicer.app`
+      Execute this command in terminal: `xattr -dr com.apple.quarantine /Applications/RackSlicer.app`
       ```console
-          softfever@mac:~$ xattr -dr com.apple.quarantine /Applications/OrcaSlicer.app
+          softfever@mac:~$ xattr -dr com.apple.quarantine /Applications/RackSlicer.app
       ```
     - Option 3:  
         - Step 1: open the app, a warning window will pop up  
@@ -50,7 +50,7 @@ Orca Slicer's logo is designed by community member Justin Levine(@freejstnalxndr
     
 **Linux(Ubuntu)**:
  1. If you run into trouble to execute it, try this command in terminal:  
-    `chmod +x /path_to_appimage/OrcaSlicer_ubu64.AppImage`
+    `chmod +x /path_to_appimage/RackSlicer_ubu64.AppImage`
 # How to compile
 - Windows 64-bit  
   - Tools needed: Visual Studio 2019, Cmake, git, Strawberry Perl.
@@ -103,7 +103,7 @@ Thank you! :)
 </table>
 
 ### Backers:  
-Ko-fi supporters: [Backers list](https://github.com/SoftFever/OrcaSlicer/wiki/OrcaSlicer-backers-%E2%80%90-28-Oct-2023)
+Ko-fi supporters: [Backers list](https://github.com/SoftFever/OrcaSlicer/wiki/RackSlicer-backers-%E2%80%90-28-Oct-2023)
 
 Support me  
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/G2G5IP3CP)

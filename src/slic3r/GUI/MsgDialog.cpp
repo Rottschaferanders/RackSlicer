@@ -160,13 +160,13 @@ Button* MsgDialog::add_button(wxWindowID btn_id, bool set_focus /*= false*/, con
     
     btn->SetCornerRadius(FromDIP(12));
     StateColor btn_bg_green(
-        std::pair<wxColour, int>(wxColour(0, 137, 123), StateColor::Pressed),
-        std::pair<wxColour, int>(wxColour(38, 166, 154), StateColor::Hovered),
-        std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Normal)
+        std::pair<wxColour, int>(wxColour(230, 90, 40), StateColor::Pressed),
+        std::pair<wxColour, int>(wxColour(245, 89, 0), StateColor::Hovered),
+        std::pair<wxColour, int>(wxColour(255, 89, 0), StateColor::Normal)
     );
 
     StateColor btn_bd_green(
-        std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Normal)
+        std::pair<wxColour, int>(wxColour(255, 89, 0), StateColor::Normal)
     );
 
     StateColor btn_text_green(
@@ -230,7 +230,7 @@ void MsgDialog::apply_style(long style)
     logo->SetBitmap( create_scaled_bitmap(style & wxAPPLY        ? "completed" :
                                           style & wxICON_WARNING        ? "obj_warning" :
                                           style & wxICON_INFORMATION    ? "info"        :
-                                          style & wxICON_QUESTION       ? "question"    : "OrcaSlicer", this, 64, style & wxICON_ERROR));
+                                          style & wxICON_QUESTION       ? "question"    : "RackSlicer", this, 64, style & wxICON_ERROR));
 }
 
 void MsgDialog::finalize()
@@ -339,7 +339,7 @@ ErrorDialog::ErrorDialog(wxWindow *parent, const wxString &msg, bool monospaced_
     add_msg_content(this, content_sizer, msg, monospaced_font);
 
 	// Use a small bitmap with monospaced font, as the error text will not be wrapped.
-	logo->SetBitmap(create_scaled_bitmap("OrcaSlicer_192px_grayscale.png", this, monospaced_font ? 48 : /*1*/84));
+	logo->SetBitmap(create_scaled_bitmap("RackSlicer_192px_grayscale.png", this, monospaced_font ? 48 : /*1*/84));
 
     SetMaxSize(wxSize(-1, CONTENT_MAX_HEIGHT*wxGetApp().em_unit()));
 
@@ -489,7 +489,7 @@ DeleteConfirmDialog::DeleteConfirmDialog(wxWindow *parent, const wxString &title
 {
     this->SetBackgroundColour(*wxWHITE);
     this->SetSize(wxSize(FromDIP(450), FromDIP(200)));
-    std::string icon_path = (boost::format("%1%/images/OrcaSlicerTitle.ico") % resources_dir()).str();
+    std::string icon_path = (boost::format("%1%/images/RackSlicerTitle.ico") % resources_dir()).str();
     SetIcon(wxIcon(encode_path(icon_path.c_str()), wxBITMAP_TYPE_ICO));
 
     wxBoxSizer *m_main_sizer = new wxBoxSizer(wxVERTICAL);
